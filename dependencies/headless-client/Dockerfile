@@ -2,7 +2,7 @@ FROM openjdk:8
 
 WORKDIR /usr/src/headless-client
 
-RUN git clone https://github.com/toshiapp/toshi-headless-client.git . && git fetch --tags && git checkout tags/v0.2.1
+RUN git clone https://github.com/emcmanus/toshi-headless-client.git . && git checkout fix-images
 
 RUN ./gradlew ToshiHeadlessClientCapsule
 
